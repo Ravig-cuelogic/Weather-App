@@ -33,10 +33,10 @@ class Weather{
             {
                 console.log(`Country - ${weatherData.location.country}`);
                 console.log(`Location - ${weatherData.location.name}`);
-                console.log(`Temperature - ${weatherData.current.temperature}`);
-                console.log(`Humidity - ${weatherData.current.humidity}`);
+                console.log(`Temperature - ${weatherData.current.temperature}°C`);
+                console.log(`Humidity - ${weatherData.current.humidity}%`);
                 console.log(`Weather Description - ${weatherData.current.weather_descriptions}`);
-                console.log(`Windspeed - ${weatherData.current.wind_speed}`);
+                console.log(`Windspeed - ${weatherData.current.wind_speed}km/h`);
                 console.log(`Wind Direction - ${weatherData.current.wind_dir}`);
             }
             else
