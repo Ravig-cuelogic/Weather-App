@@ -4,12 +4,11 @@
 const Weather = require("./weather");
 
 
-let pune = new Weather();
-pune.getWeatherData()
+let weatherObject = new Weather();
+weatherObject.getWeatherData()
 .then(data =>{
-    pune.displayData(data);
+    weatherObject.displayData(data);
 })
 .catch(error =>{
 console.log(error);
 });
-
