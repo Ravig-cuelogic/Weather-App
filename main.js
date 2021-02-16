@@ -1,9 +1,15 @@
 // Weather app 
-// create obj of Weather class and pass the name of city to which the temp is to be found 
+// pass the place name in the cmd line arg to get the weather data
 
 const Weather = require("./weather");
 
-let pune = new Weather("Pune");
-pune.getWeatherData();
-pune.displayData();
+
+let pune = new Weather();
+pune.getWeatherData()
+.then(data =>{
+    pune.displayData(data);
+})
+.catch(error =>{
+console.log(error);
+});
 
